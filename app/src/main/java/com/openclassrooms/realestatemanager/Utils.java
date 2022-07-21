@@ -40,17 +40,17 @@ public class Utils {
     public static int convertEuroToDollar(int euros){
         return (int) Math.round(euros / Utils.getRate());
     }
-    /**
-     * Conversion de la date d'aujourd'hui en un format plus approprié
+   /**
+           * Conversion de la date d'aujourd'hui en un format plus approprié
      * NOTE : NE PAS SUPPRIMER, A MONTRER DURANT LA SOUTENANCE
      * @return
-     */
+             */
     public static String getTodayDate(){
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         return dateFormat.format(new Date());
     }
     /**
-     * Conversion de la date d'aujourd'hui en un format European
+     * Conversion de la date d'aujourd'hui en un format European"dd/MM/YYYY"
      */
     public static String formatDateToEuropean(){
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
