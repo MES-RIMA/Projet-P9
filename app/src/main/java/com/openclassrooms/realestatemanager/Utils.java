@@ -52,9 +52,9 @@ public class Utils {
     /**
      * Conversion de la date d'aujourd'hui en un format European
      */
-    private static String formatDateToEuropean(Date date){
+    public static String formatDateToEuropean(){
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        return dateFormat.format(date);
+        return dateFormat.format(new Date());
     }
     /**
      * Vérification de la connexion réseau
