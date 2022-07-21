@@ -57,4 +57,5 @@ public class ExampleUnitTest {
         final String toDayString = Utils.getTodayDate();
         assertEquals(toDayString, expectedString);
     }
+
 }
